@@ -46,3 +46,18 @@ def search(q: str = ""):
         "query": q,
         "message": f"Search received for: {q}"
     }
+@app.get("/secure", response_class=HTMLResponse)
+def secure():
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Secure Area</title>
+    </head>
+    <body>
+        <h1>Secure Area</h1>
+        <p>You successfully authenticated through Cloudflare Access.</p>
+    </body>
+    </html>
+    """
+

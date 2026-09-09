@@ -1,0 +1,16 @@
+
+# Python
+__pycache__/
+*.pyc
+
+# Node / Worker
+node_modules/
+worker/node_modules/
+worker/.wrangler/
+
+# Local/generated files
+worker/seed-us.sql
+worker/US.svg
+
+# macOS
+.DS_Store
